@@ -89,19 +89,25 @@
 
     </GridLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewDialogDates"
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerViewDialogDates"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/gridWeekLabelsDialog"-->
+<!--        android:layout_marginTop="8dp" />-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerDialogDates"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/gridWeekLabelsDialog"
         android:layout_marginTop="8dp" />
-
     <Button
         android:id="@+id/btnDialogOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OK"
-        android:layout_below="@id/recyclerViewDialogDates"
+        android:layout_below="@id/gridWeekLabelsDialog"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
         />
